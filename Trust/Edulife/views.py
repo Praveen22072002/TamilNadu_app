@@ -10,5 +10,9 @@ def home(request):
     return HttpResponse(template.render({}, request))
 
 
+def about(request):
+    template = loader.get_template('About.html')
+    return HttpResponse(template.render({}, request))
+
 
 
